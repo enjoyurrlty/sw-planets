@@ -1,11 +1,15 @@
 import React from 'react';
-import {NativeBaseProvider} from 'native-base';
+import {NativeBaseProvider, Flex} from 'native-base';
 import Planets from './src/screens/Planets';
+import AppBar from './src/components/AppBar';
 
 const App = () => {
   return (
     <NativeBaseProvider>
-      <Planets />
+      <Flex flexGrow={1}>
+        <AppBar />
+        <Planets />
+      </Flex>
     </NativeBaseProvider>
   );
 };
