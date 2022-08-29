@@ -1,5 +1,5 @@
-import {Button, HStack, Text} from 'native-base';
 import React from 'react';
+import {Button, HStack, Text} from 'native-base';
 
 type PaginationProps = {
   page: number;
