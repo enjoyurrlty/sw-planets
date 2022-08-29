@@ -1,7 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import {FlatList, Spinner, Text} from 'native-base';
 import Pagination from '../components/Pagination';
-import Layout from '../components/Layout';
 import ListItem from '../components/ListItem';
 
 const BASE_URL = 'https://swapi.dev/api/planets/';

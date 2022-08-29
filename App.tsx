@@ -1,15 +1,16 @@
 import React from 'react';
 import {NativeBaseProvider, Flex} from 'native-base';
 import {NavigationContainer} from '@react-navigation/native';
-import {Router} from './src/routes';
+import Router from './src/routes';
+import Layout from './src/components/Layout';
 
 function App() {
   return (
     <NavigationContainer>
       <NativeBaseProvider>
-        <Flex flexGrow={1}>
+        <Layout>
           <Router />
-        </Flex>
+        </Layout>
       </NativeBaseProvider>
     </NavigationContainer>
   );

@@ -1,5 +1,5 @@
 import React from 'react';
-import {Box} from 'native-base';
+import {Box, Text} from 'native-base';
 import {Link} from '@react-navigation/native';
 
 type ListItemProps = {[key: string]: any};
@@ -16,7 +16,7 @@ function ListItem({item}: ListItemProps) {
       my={2}
       mx="auto">
       <Link to={{screen: 'PlanetDetails', params: {planet: item}}}>
-        {item.name}
+        <Text fontSize="lg">{item.name}</Text>
       </Link>
     </Box>
   );

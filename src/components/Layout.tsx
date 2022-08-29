@@ -9,8 +9,8 @@ type LayoutProps = {
 function Layout({children}: LayoutProps) {
   return (
     <>
-      <AppBar title="SW Planets App" />
-      <Box flexGrow={1} my={2} px={2} pb={6}>
+      <AppBar title="SW Planets App " />
+      <Box flexGrow={1} pb={6}>
         {children}
       </Box>
     </>
