@@ -40,7 +40,7 @@ function Pagination({page, hasMore, isLoading, onPageChange}: PaginationProps) {
   const isLastPage = !hasMore;
 
   return (
-    <HStack mt="auto">
+    <HStack mt="auto" pb="4" px="2">
       <PaginationButton
         onPageChange={() => onPageChange(page - 1)}
         isDisabled={isFirstPage}

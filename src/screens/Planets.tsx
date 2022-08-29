@@ -36,7 +36,7 @@ function Planets() {
   }, [page]);
 
   return (
-    <Layout>
+    <>
       {isLoading && <Spinner accessibilityLabel="Loading planets" />}
       {isError && <Text>Something went wrong...</Text>}
       {data && !isLoading && (
@@ -53,7 +53,7 @@ function Planets() {
         hasMore={hasMore}
         isLoading={isLoading}
       />
-    </Layout>
+    </>
   );
 }
 

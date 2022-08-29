@@ -24,7 +24,7 @@ export type PlanetDetailsScreenProps = NativeStackScreenProps<
 
 const {Navigator, Screen} = createNativeStackNavigator<RootStackParamList>();
 
-export function Router() {
+function Router() {
   return (
     <Navigator initialRouteName="Planets">
       <Screen
@@ -43,3 +43,5 @@ export function Router() {
     </Navigator>
   );
 }
+
+export default Router;
