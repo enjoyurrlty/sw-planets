@@ -1,5 +1,5 @@
 import React from 'react';
-import {NativeBaseProvider, Flex} from 'native-base';
+import {NativeBaseProvider} from 'native-base';
 import {NavigationContainer} from '@react-navigation/native';
 import Router from './src/routes';
 import Layout from './src/components/Layout';
